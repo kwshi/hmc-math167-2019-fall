@@ -1,0 +1,61 @@
+\documentclass{../math167}
+
+\title{Homework 1}
+\author{}
+\date{September 12}
+
+\begin{document}
+
+\begin{problems}
+\item Problem 2.8.7(b) of the text.
+  \begin{book}
+    Suppose that we have a Turing machine with an infinite
+    \emph{two-dimensional string} (blackboard?). There are now moves
+    of the form \(\uparrow\) and \(\downarrow\), along with
+    \(\leftarrow\) and \(\rightarrow\).  The input is written
+    initially to the right of the initial cursor positoin.
+    \begin{problems}[start=2]
+    \item Show that such a machine can be simulated by a 3-string
+      Turing machine with a \emph{quadratic} loss of efficiency.
+    \end{problems}
+  \end{book}
+  (Here, ``\emph{quadratic} loss of efficiency'' means that what the
+  simulated machine does in the first \(s\) steps, the simulating
+  machine accomplishes in its first \(O(s^2)\) steps.)
+
+  \begin{solution}
+  \end{solution}
+
+\item Suppose that we have a Turing machine with a single string, but
+  with two independently movable cursors on it.  (Each cursor can read
+  the symbol of the string at which it is positioned, whether that
+  symbol was written by it or by the other cursor.)  Show that such a
+  machine can be simulated by a 2-string Turing machine (with each
+  string having its own cursor, as usual) with a \emph{linear} loss of
+  efficiency.  (Here, ``\emph{linear} loss of efficiency'' means that
+  what the simulated machine does it its first \(s\) steps, the
+  simulating machine accomplishes in its first \(O(s)\) steps.)
+
+  \begin{solution}
+  \end{solution}
+
+\item Problem 2.8.17 of the text.
+  \begin{book}
+    Show that any language decided by a \(k\)-string nondeterministic
+    Turing machine within time \(f(n)\) can be decided by a 2-string
+    nondeterministic Turing machine \emph{also} within time \(f(n)\).
+    (Discovering the simple solution is an excellent exercise for
+    understanding nondeterminism.  Compare with Theorem 2.1 and
+    Problem 2.8.9 for deterministic machines.)
+
+    Needless to say, any \(k\)-string nondeterministic Turing machine
+    can be simulated by a single-string nondeterministic machine with
+    a quadratic loss of efficiency, exactly as with deterministic
+    machines.
+  \end{book}
+
+  \begin{solution}
+  \end{solution}
+\end{problems}
+
+\end{document}
