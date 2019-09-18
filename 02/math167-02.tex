@@ -1,0 +1,33 @@
+\documentclass{../math167}
+
+\title{Homework 2}
+\date{September 19}
+\author{}
+
+\newcommand{\NOT}{\operatorname{NOT}}
+\newcommand{\AND}{\operatorname{AND}}
+\newcommand{\OR}{\operatorname{OR}}
+
+\begin{document}
+\begin{problems}
+\item Suppose that a Boolean circuit with \(n\) inputs has \(a\)
+  \(\AND\)- and \(\OR\)-gates and \(b\) \(\NOT\)-gates.  Show that the
+  same Boolean function can be computed by a circuit with \(2a\)
+  \(\AND\)- and \(\OR\)-gates and \(n\) \(\NOT\)-gates.
+
+\item Construct a Boolean circuit that has three inputs \(x\), \(y\),
+  and \(z\), and three outputs \(\NOT(x)\), \(\NOT(y)\), and
+  \(\NOT(z)\).  You may use any number of \(\AND\)- and \(\OR\)-gates
+  but only \emph{two} \(\NOT\)-gates.
+
+\item Problem 4.4.13 of the text.
+  \begin{book}
+    A \emph{monotone} Boolean function \(F\) is one that has the
+    following property: If one of the inputs changes from
+    \(\mathbf{false}\) to \(\mathbf{true}\), the value of the function
+    cannot change from \(\mathbf{true}\) to \(\mathbf{false}\).  Show
+    that \(F\) is monotone if and only if it can be expressed as a
+    circuit with only \(\AND\) and \(\OR\) gates.
+  \end{book}
+\end{problems}
+\end{document}
