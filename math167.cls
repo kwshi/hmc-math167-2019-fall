@@ -21,12 +21,11 @@
   \fancyhf{}
   \renewcommand{\headrulewidth}{0pt}
   \chead{\textbf{\thetitle}\\Math 167 / CS 142: Complexity Theory}
-  \lhead{\leavevmode{\footnotesize Due \thedate}\\}
-  \rhead{\leavevmode{\footnotesize\theauthor}\\}
+  \lhead{\leavevmode\footnotesize Due \thedate\\}
+  \rhead{\leavevmode\footnotesize\theauthor\\}
   \cfoot{\footnotesize\thepage{} OF \pageref{LastPage}}
 }
 \pagestyle{homework}
-
 
 \RequirePackage{microtype}
 \RequirePackage[T1]{fontenc}
@@ -38,6 +37,7 @@
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
 \RequirePackage{mathtools}
+\RequirePackage{wasysym}
 
 \RequirePackage{isomath}
 
