@@ -39,6 +39,9 @@
 \RequirePackage{mathtools}
 \RequirePackage{wasysym}
 
+\RequirePackage{wasysym}
+\RequirePackage{textcomp}
+
 \RequirePackage{isomath}
 
 \RequirePackage{tikz}
