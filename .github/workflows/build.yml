@@ -3,6 +3,7 @@ name: CI
 on: [push]
 
 jobs:
+  runs-on: ubuntu-18.04
   build:
     steps:
       - name: Build PDF
