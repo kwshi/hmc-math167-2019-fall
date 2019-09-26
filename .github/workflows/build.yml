@@ -1,0 +1,10 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    steps:
+      - name: Build PDF
+        uses: docker://dxjoke/tectonic-docker
+      - run: echo hi
