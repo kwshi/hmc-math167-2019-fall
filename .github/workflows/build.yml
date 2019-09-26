@@ -1,11 +1,16 @@
-name: CI
 
+name: build pdfs
+# This workflow is triggered on pushes to the repository.
 on: [push]
 
 jobs:
-  runs-on: ubuntu-18.04
   build:
+    name: build pdfs
+    runs-on: macOS-latest
     steps:
-      - name: Build PDF
-        uses: docker://dxjoke/tectonic-docker
-      - run: echo hi
+      - name: checkout
+        uses: actions/checkout@v1
+      - name: install tectonic
+        run: brew install tectonic
+      - name: build pdfs
+        run: tectonic */*.tex
