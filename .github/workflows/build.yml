@@ -13,4 +13,4 @@ jobs:
       - name: install tectonic
         run: brew install tectonic
       - name: build pdfs
-        run: tectonic */*.tex
+        run: ./build.bash
