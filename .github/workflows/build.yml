@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v1
+        with:
+          ref: pdfs
       - name: install tectonic
         run: brew install tectonic
       - name: build pdfs
