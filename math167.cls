@@ -88,6 +88,10 @@
 \newcommand{\CC}{\mathbb C}
 \newcommand{\TT}{\mathbb T}
 
+\newcommand{\AND}{\operatorname{AND}}
+\newcommand{\OR}{\operatorname{OR}}
+\newcommand{\NOT}{\operatorname{NOT}}
+
 \renewcommand{\P}{\mathbf P}
 \newcommand{\NP}{\mathbf{NP}}
 \newcommand{\PSPACE}{\mathbf{PSPACE}}
