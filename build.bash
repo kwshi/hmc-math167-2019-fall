@@ -7,4 +7,4 @@ do tectonic "$f"
 done
 
 git add --force */*.pdf
-git push origin pdfs
+git -c http.extraHeader="Authorization: basic kwshi:$PUSH_TOKEN" push origin pdfs
