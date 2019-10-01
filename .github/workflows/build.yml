@@ -16,7 +16,7 @@ jobs:
         with:
           ref: pdfs
       - name: merge
-        run: git merge -m 'merge' master
+        run: git merge -m 'merge' origin/master
       - name: install tectonic
         run: brew install tectonic
       - name: build pdfs
