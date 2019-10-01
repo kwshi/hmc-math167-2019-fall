@@ -11,15 +11,26 @@ jobs:
     name: build pdfs
     runs-on: macOS-latest
     steps:
+      - name: install tectonic
+        run: brew install tectonic
       - name: checkout
         uses: actions/checkout@v1
         with:
           ref: pdfs
       - name: merge
         run: git merge -m 'merge' origin/master
-      - name: install tectonic
-        run: brew install tectonic
       - name: build pdfs
-        run: ./build.bash
+        run: |
+          for f in */*.tex
+          do tectonic "$f"
+          done
+      - name: push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git add --force */*.pdf
+          git commit -m 'generate pdfs'
+          auth=$(printf '%s:%s' kwshi "$GITHUB_TOKEN" | base64)
+          git \
+            -c http.extraHeader="Authorization: basic $auth" \
+            push origin pdfs
