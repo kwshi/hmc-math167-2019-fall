@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x
+
 git merge master --msg 'merge'
 
 for f in */*.tex
