@@ -7,4 +7,6 @@ do tectonic "$f"
 done
 
 git add --force */*.pdf
-git -c http.extraHeader="Authorization: token $GITHUB_TOKEN" push origin pdfs
+git \
+  -c http.extraHeader="Authorization: basic $(printf '%s:%s' kwshi "$GITHUB_TOKEN" | base64)" \
+  push origin pdfs
