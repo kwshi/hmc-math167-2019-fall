@@ -18,7 +18,9 @@ jobs:
         with:
           ref: pdfs
       - name: merge
-        run: git merge -m 'merge' origin/master
+        run: |
+          git fetch origin master
+          git merge -m 'merge' origin/master
       - name: build pdfs
         run: |
           for f in */*.tex
