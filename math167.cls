@@ -50,6 +50,9 @@
 \usetikzlibrary{arrows.meta}
 \usetikzlibrary{calc}
 \usetikzlibrary{positioning}
+\usetikzlibrary{circuits}
+\usetikzlibrary{circuits.logic}
+\usetikzlibrary{circuits.logic.US}
 
 \RequirePackage{parskip}
 
@@ -61,6 +64,16 @@
   linecolor=gray,
 }
 \newmdenv[style=solution]{solution}
+
+\mdfdefinestyle{aside}{
+  hidealllines=true,
+  skipabove=.5em,
+  skipbelow=.5em,
+  leftline=true,
+  linecolor=gray,
+  linewidth=.25em,
+}
+\newmdenv[style=aside]{aside}
 
 \mdfdefinestyle{book}{
   hidealllines=true,
@@ -89,8 +102,12 @@
 \newcommand{\TT}{\mathbb T}
 
 \newcommand{\AND}{\operatorname{AND}}
+\newcommand{\NAND}{\operatorname{NAND}}
 \newcommand{\OR}{\operatorname{OR}}
+\newcommand{\NOR}{\operatorname{NOR}}
 \newcommand{\NOT}{\operatorname{NOT}}
+\newcommand{\XOR}{\operatorname{XOR}}
+\newcommand{\NXOR}{\operatorname{NXOR}}
 
 \renewcommand{\P}{\mathbf P}
 \newcommand{\NP}{\mathbf{NP}}
