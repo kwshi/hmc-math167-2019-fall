@@ -110,6 +110,8 @@
 \newcommand{\NXOR}{\operatorname{NXOR}}
 
 \renewcommand{\P}{\mathbf P}
+\newcommand{\BPP}{\mathbf{BPP}}
+\newcommand{\RP}{\mathbf{RP}}
 \newcommand{\NP}{\mathbf{NP}}
 \newcommand{\PSPACE}{\mathbf{PSPACE}}
 \newcommand{\TIME}{\mathbf{TIME}}
@@ -123,6 +125,8 @@
 \newcommand{\kSAT}[1][k]{\(#1\)-\SAT}
 \newcommand{\TSP}{\textsc{tsp}}
 \newcommand{\CIRCUITVALUE}{\textsc{circuit value}}
+\newcommand{\STCONN}{\textsc{stconn}}
+\newcommand{\SUCCINCTSTCONN}{\textsc{succinct stconn}}
 
 \newcommand{\true}{\mathbf{true}}
 \newcommand{\false}{\mathbf{false}}
