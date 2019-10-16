@@ -118,6 +118,15 @@
 \newcommand{\NSPACE}{\mathbf{NSPACE}}
 \renewcommand{\O}{\mathcal O}
 
+\newcommand{\SAT}{\textsc{sat}}
+\newcommand{\CIRCUITSAT}{\textsc{circuit sat}}
+\newcommand{\kSAT}[1][k]{\(#1\)-\SAT}
+\newcommand{\TSP}{\textsc{tsp}}
+\newcommand{\CIRCUITVALUE}{\textsc{circuit value}}
+
+\newcommand{\true}{\mathbf{true}}
+\newcommand{\false}{\mathbf{false}}
+
 \newcommand{\dif}{\mathop{}\!\mathrm d}
 \newcommand{\pdif}{\!\mathop{\partial}}
 \newcommand{\drv}[3][]{\frac{\dif^{#1} #2}{\dif #3^{#1}}}
