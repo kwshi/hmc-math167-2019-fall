@@ -115,6 +115,7 @@
 \renewcommand{\P}{\mathbf P}
 \newcommand{\BPP}{\mathbf{BPP}}
 \newcommand{\RP}{\mathbf{RP}}
+\newcommand{\PP}{\mathbf{PP}}
 \newcommand{\NP}{\mathbf{NP}}
 \newcommand{\NPSPACE}{\mathbf{NPSPACE}}
 \newcommand{\PSPACE}{\mathbf{PSPACE}}
