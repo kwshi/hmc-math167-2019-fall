@@ -21,8 +21,8 @@
   \fancyhf{}
   \renewcommand{\headrulewidth}{0pt}
   \chead{\textbf{\thetitle}\\Math 167 / CS 142: Complexity Theory}
-  \lhead{\leavevmode\footnotesize Due \thedate\\}
-  \rhead{\leavevmode\footnotesize\theauthor\\}
+  \lhead{\leavevmode{\footnotesize Due \thedate}\\}
+  \rhead{\leavevmode{\footnotesize\theauthor}\\}
   \cfoot{\footnotesize\thepage{} OF \pageref{LastPage}}
 }
 \pagestyle{homework}
@@ -109,14 +109,32 @@
 \newcommand{\XOR}{\operatorname{XOR}}
 \newcommand{\NXOR}{\operatorname{NXOR}}
 
+\renewcommand{\L}{\mathbf L}
+\newcommand{\NL}{\mathbf{NL}}
+\newcommand{\FL}{\mathbf{FL}}
 \renewcommand{\P}{\mathbf P}
+\newcommand{\BPP}{\mathbf{BPP}}
+\newcommand{\RP}{\mathbf{RP}}
+\newcommand{\PP}{\mathbf{PP}}
 \newcommand{\NP}{\mathbf{NP}}
+\newcommand{\NPSPACE}{\mathbf{NPSPACE}}
 \newcommand{\PSPACE}{\mathbf{PSPACE}}
 \newcommand{\TIME}{\mathbf{TIME}}
 \newcommand{\NTIME}{\mathbf{NTIME}}
 \newcommand{\SPACE}{\mathbf{SPACE}}
 \newcommand{\NSPACE}{\mathbf{NSPACE}}
 \renewcommand{\O}{\mathcal O}
+
+\newcommand{\SAT}{\text{\textsc{sat}}}
+\newcommand{\CIRCUITSAT}{\text{\textsc{circuit sat}}}
+\newcommand{\kSAT}[1][k]{\text{\(#1\)-\SAT}}
+\newcommand{\TSP}{\text{\textsc{tsp}}}
+\newcommand{\CIRCUITVALUE}{\text{\textsc{circuit value}}}
+\newcommand{\STCONN}{\text{\textsc{stconn}}}
+\newcommand{\SUCCINCTSTCONN}{\text{\textsc{succinct stconn}}}
+
+\newcommand{\true}{\mathbf{true}}
+\newcommand{\false}{\mathbf{false}}
 
 \newcommand{\dif}{\mathop{}\!\mathrm d}
 \newcommand{\pdif}{\!\mathop{\partial}}
