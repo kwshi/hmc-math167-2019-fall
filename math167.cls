@@ -119,19 +119,22 @@
 \newcommand{\NP}{\mathbf{NP}}
 \newcommand{\NPSPACE}{\mathbf{NPSPACE}}
 \newcommand{\PSPACE}{\mathbf{PSPACE}}
+\newcommand{\EXPSPACE}{\mathbf{EXPSPACE}}
+\newcommand{\NEXPSPACE}{\mathbf{NEXPSPACE}}
 \newcommand{\TIME}{\mathbf{TIME}}
 \newcommand{\NTIME}{\mathbf{NTIME}}
 \newcommand{\SPACE}{\mathbf{SPACE}}
 \newcommand{\NSPACE}{\mathbf{NSPACE}}
 \renewcommand{\O}{\mathcal O}
 
-\newcommand{\SAT}{\text{\textsc{sat}}}
-\newcommand{\CIRCUITSAT}{\text{\textsc{circuit sat}}}
-\newcommand{\kSAT}[1][k]{\text{\(#1\)-\SAT}}
-\newcommand{\TSP}{\text{\textsc{tsp}}}
-\newcommand{\CIRCUITVALUE}{\text{\textsc{circuit value}}}
-\newcommand{\STCONN}{\text{\textsc{stconn}}}
-\newcommand{\SUCCINCTSTCONN}{\text{\textsc{succinct stconn}}}
+\newcommand{\problem}[1]{\ensuremath{\mathrm{\scriptstyle #1}}}
+\newcommand{\SAT}{\problem{SAT}}
+\newcommand{\CIRCUITSAT}{\problem{CIRCUIT\,SAT}}
+\newcommand{\kSAT}[1][k]{\problem{#1{-}SAT}}
+\newcommand{\TSP}{\problem{TSP}}
+\newcommand{\CIRCUITVALUE}{\problem{CIRCUIT\,VALUE}}
+\newcommand{\STCONN}{\problem{STCONN}}
+\newcommand{\SUCCINCTSTCONN}{\problem{SUCCINCT\,STCONN}}
 
 \newcommand{\true}{\mathbf{true}}
 \newcommand{\false}{\mathbf{false}}
