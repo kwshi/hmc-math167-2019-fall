@@ -46,6 +46,7 @@
 
 \RequirePackage{tikz}
 \RequirePackage{pgfplots}
+\RequirePackage{forest}
 
 \usetikzlibrary{arrows.meta}
 \usetikzlibrary{calc}
@@ -109,6 +110,8 @@
 \newcommand{\XOR}{\operatorname{XOR}}
 \newcommand{\NXOR}{\operatorname{NXOR}}
 
+\newcommand{\pro}{\mathbf{pro}}
+\newcommand{\co}{\mathbf{co}}
 \renewcommand{\L}{\mathbf L}
 \newcommand{\NL}{\mathbf{NL}}
 \newcommand{\FL}{\mathbf{FL}}
