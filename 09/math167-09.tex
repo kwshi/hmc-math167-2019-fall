@@ -1,0 +1,57 @@
+\documentclass{../math167}
+
+\title{Homework 9}
+\author{}
+\date{21 November}
+
+\begin{document}
+\begin{problems}
+\item Problem 14.5.10 of the text.  (Hint: Do part (b) first.)
+  \begin{book}
+    \newcommand{\h}{_\mathrm h}
+
+    Define a \emph{robust} oracle machine \(M^?\) deciding language
+    \(L\) to be one such that \(L(M^A) = L\) for all oracles \(A\).
+    That is, the answers are always correct, independently of the
+    oracle (although the number of steps may vary from oracle to
+    oracle).  If furthermore \(M^A\) works in polynomial time, we say
+    that oracle \(A\) \emph{helps} the robust machine \(M^?\).  Let
+    \(\P\h\) be the class of languages decideable in polynomial time
+    by deterministic robust oracle machines that can be helped; and
+    \(\NP\h\) for nondeterministic machines.
+    \begin{problems}
+    \item Show that \(\P\h = \NP \cap \co\NP\).
+    \item Show that \(\NP\h = \NP\).
+    \end{problems}
+  \end{book}
+
+  \begin{solution}
+    \begin{problems}
+    \item
+    \item
+    \end{problems}
+  \end{solution}
+
+\item Reduce the computation of the parity
+  \(x_1 \oplus \dots \oplus x_n\) of \(n\) Boolean variables to the
+  multiplication of two \(n^2\)-bit factors (represented in binary) to
+  form a \(2n^2\)-bit product, by setting some of the bits of the
+  factors to constants in such a way that the parity of the remaining
+  bits emerges as one of the bits of the product.
+
+  \begin{solution}
+  \end{solution}
+
+\item Show how the \(n\) Boolean functions
+  \(y_1=x_1, y_2 = x_1 \lor x_2, \dots, y_n = x_1 \lor x_2 \lor \cdots
+  \lor x_n\) of the \(n\) Boolean variables \(x_1, x_2, \dots, x_n\)
+  can be computed by an unbounded fan-incircuit of NOT-, AND- and
+  OR-gates of size \(\O(n)\) and depth \(\O(1)\). (Hint: Partition the
+  \(n\) inputs into about \(\sqrt n\) blocks of about \(\sqrt n\)
+  inputs each.)
+
+  \begin{solution}
+  \end{solution}
+
+\end{problems}
+\end{document}
