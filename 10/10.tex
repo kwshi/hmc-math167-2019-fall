@@ -1,0 +1,52 @@
+\documentclass{../math167}
+
+\title{Homework 10}
+\author{}
+\date{5 December 2019}
+
+\begin{document}
+\begin{problems}
+\item Consider the tree underlying a logical formula; that is, a tree
+  in which every internal vertex has degree one or two; and regard
+  each edge as being directed toward the root.  Recall that the
+  \emph{pebble number} of such a tree is the smallest number of
+  pebbles sufficient to allow a pebble to be placed on the root, with
+  the following rules:
+  \begin{enumerate*}
+  \item a pebble may be placed on a vertex provided all immediate
+    predecessors of that vertex currently have pebbles on them, and
+  \item a pebble may be removed from a vertex at any time.
+  \end{enumerate*}
+  Show that there is a polynomial-time algorithm for determining the
+  pebble number of such a tree.
+
+  \begin{solution}
+  \end{solution}
+
+\item Show that in the unbounded-fan-in model for circuits (gates with
+  fan-in \(m\) contribute \(m\) to the size, but only \(1\) to the
+  depth), the parity function
+  \(f(x_1, \dots, x_n) = x_1 \oplus \dots \oplus x_n\) can be computed
+  by circuits with polynomial size and depth
+  \(\O(\log n / \log \log n)\).
+
+  \begin{solution}
+  \end{solution}
+
+\item Show that the majority function
+  \[
+    f(x_1, \dots, x_{2m+1}) =
+    \begin{cases}
+      1, & \text{if at least \(m+1\) of the inputs are \(1\)s}, \\
+      0, & \text{otherwise},
+    \end{cases}
+  \]
+  can be computed by circuits (ordinary circuits, with fan-in two) of
+  depth \(\O\prn*{\log(2m+1)}\).  (Hint: Let \(2m+1 = 2^k-1\); divide
+  and conquer!)
+
+  \begin{solution}
+  \end{solution}
+
+\end{problems}
+\end{document}
