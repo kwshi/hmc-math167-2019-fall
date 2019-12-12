@@ -50,6 +50,7 @@
 
 \usetikzlibrary{arrows.meta}
 \usetikzlibrary{calc}
+\usetikzlibrary{math}
 \usetikzlibrary{positioning}
 \usetikzlibrary{circuits}
 \usetikzlibrary{circuits.logic}
@@ -86,7 +87,7 @@
 }
 \newmdenv[style=book]{book}
 
-\RequirePackage{enumitem}
+\RequirePackage[inline]{enumitem}
 \newlist{problems}{enumerate}{3}
 \setlist[problems, 1]{
   label=\arabic*.,
