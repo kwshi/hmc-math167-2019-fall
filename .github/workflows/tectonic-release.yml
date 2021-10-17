@@ -1,0 +1,16 @@
+name: "tectonic-release"
+on: "push"
+jobs:
+  main:
+    name: "tectonic-release"
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: "checkout source files"
+        uses: "actions/checkout@v2"
+      - name: "build & release"
+        uses: "kwshi/action-tectonic-release@main"
+        with:
+          token: "${{secrets.GITHUB_TOKEN}}"
+          paths: |
+            */*.tex
+            paper/*/*.tex
